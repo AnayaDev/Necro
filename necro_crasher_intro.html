@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Necro Crasher</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+    body {
+      margin: 0;
+      background: black;
+      color: red;
+      font-family: 'UnifrakturCook', cursive;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3em;
+      animation: glitch 2s infinite;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 80%;
+      margin-top: 20px;
+      line-height: 1.5em;
+      animation: fadeIn 4s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 2px 0 red, -2px 0 darkred; }
+      20% { text-shadow: -2px 0 red, 2px 0 darkred; }
+      40% { text-shadow: 2px 0 red, -2px 0 darkred; }
+      60% { text-shadow: -2px 0 red, 2px 0 darkred; }
+      80% { text-shadow: 2px 0 red, -2px 0 darkred; }
+      100% { text-shadow: -2px 0 red, 2px 0 darkred; }
+    }
+
+    .symbol {
+      font-size: 2em;
+      margin-bottom: 10px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="symbol">⛧☠️⛧</div>
+    <h1>Necro Crasher</h1>
+    <p>
+      🩸 Necro Crasher<br>
+      Kami bukan hanya sekadar script — kami adalah kutukan digital.<br><br>
+      ⛧ Diciptakan dari kegelapan, dijalankan untuk menghancurkan. <br>
+      ⛧ Siapa yang masuk, tak akan keluar dengan utuh.<br><br>
+      <b>⚠️ Jangan gunakan sembarangan. Kami tidak bertanggung jawab atas kehancuran yang kamu timbulkan.</b>
+    </p>
+  </div>
+</body>
+</html>
